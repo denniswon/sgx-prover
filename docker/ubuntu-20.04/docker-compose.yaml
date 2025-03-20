@@ -1,12 +1,12 @@
 services:
   sgx-scaffold-builder:
-    image: ghcr.io/automata-network/sgx-scaffold:ubuntu-20.04_sgx-2.24
+    image: ghcr.io/denniswon/sgx-prover:ubuntu-20.04_sgx-2.24
     build:
       context: ./../../
       dockerfile: ./docker/ubuntu-20.04/Dockerfile
 
   sgx-scaffold:
-    image: ghcr.io/automata-network/sgx-scaffold:ubuntu-20.04_sgx-2.24
+    image: ghcr.io/denniswon/sgx-prover:ubuntu-20.04_sgx-2.24
     container_name: sgx-scaffold
     privileged: true
     environment:
